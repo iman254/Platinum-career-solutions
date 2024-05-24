@@ -1,0 +1,41 @@
+$primary-color: #2B2A4C;
+$secondary-color: #FC6736;
+$primary-fade: rgb(43, 42, 76, 0.5);
+$secondary-fade: rgb(252, 103, 54, 0.5);
+$text-color: #e9d2ca;
+$title-font-family: "Gluten", cursive;
+$secondary-font: "inter", sans-serif;
+$sub-secondary-font: "Cormorant Garamond", serif;
+
+
+@keyframes neon {
+    0% {
+        color: $text-color; 
+    }
+    50% {
+        color: $secondary-color; 
+        text-shadow: 0 0 5px #EFECEC; 
+    }
+    100% {
+        color: $text-color; 
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color){
+    @if (lightness($color) > 40%) {
+        @return #2B2A4C;
+    } @else {
+        @return #fff;
+    }
+}
+
