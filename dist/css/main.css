@@ -241,6 +241,11 @@ header {
   width: 100%;
   padding: 1rem;
 }
+header .logo-title {
+  font-family: "inter", sans-serif;
+  color: #FC6736;
+  text-align: center;
+}
 
 main {
   height: 100%;
@@ -248,19 +253,13 @@ main {
 }
 
 footer {
+  height: 20vh;
   font-size: 1rem;
   position: relative;
-  bottom: 0.4rem;
-  right: 1rem;
   text-align: center;
   padding-bottom: 1rem;
   color: #fff;
-  height: 10vh;
-}
-footer .logo-img {
-  width: 15%;
-  height: auto;
-  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.9254901961);
 }
 footer ul {
   list-style-type: none;
@@ -268,4 +267,22 @@ footer ul {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  display: flex;
+  flex: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 1rem;
+}
+footer ul .icons {
+  padding: 0.5rem;
+  border: 1px solid #FC6736;
+  border-radius: 180px;
+  margin-bottom: 0.5rem;
+}
+footer ul .icons:hover {
+  background-color: #FC6736;
+  zoom: 1;
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=main.css.map */

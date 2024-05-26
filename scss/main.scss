@@ -2,6 +2,7 @@
 @import 'home';
 @import 'menu';
 @import 'about';
+@import 'pricing';
 
 body{
     color: set-text-color($primary-color);
@@ -28,7 +29,16 @@ header{
     width: 100%;
     padding: 1rem;
 
+    .logo-title{
+        font-family: $secondary-font;
+        color: $secondary-color;
+        text-align: center;
+        
+
+    }
+
 }
+
 main{
     height: 100%;
     width: 100%;
@@ -37,25 +47,45 @@ main{
 
 }
 footer{
+    height: 20vh;
     font-size: 1rem;
     position:relative;
-    bottom: 0.4rem;
-    right: 1rem;
     text-align: center;
     padding-bottom: 1rem;
     color: set-text-color($primary-color);
-    height: 10vh;
+    background-color: #000000ec;
 
-    .logo-img{
-        width: 15%;
-        height: auto;
-        padding-top: 10px;
-    }
+
 
     ul{
         list-style-type: none;
         text-decoration: none;
         appearance: none;
+        display: flex;
+        flex: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 1rem;
+
+
+        .icons{
+            padding: 0.5rem;
+            border: 1px solid $secondary-color;
+            border-radius: 180px;
+            margin-bottom: 0.5rem;
+
+            &:hover{
+                background-color: $secondary-color;
+                zoom: 1;
+                @include transition-ease;
+            }
+        }
+        
+
+        
+        
     }
 }
 
