@@ -1,6 +1,5 @@
 $primary-color: #2B2A4C;
 $secondary-color: #FC6736;
-$primary-fade: rgb(43, 42, 76, 0.5);
 $secondary-fade: rgb(252, 103, 54, 0.5);
 $text-color: #e9d2ca;
 $title-font-family: "Gluten", cursive;
@@ -37,5 +36,21 @@ $sub-secondary-font: "Cormorant Garamond", serif;
     } @else {
         @return #fff;
     }
+    
 }
 
+@mixin flex-center($direction){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+@mixin main-title{
+    font-family: $title-font-family;
+    font-size: 3rem;
+    letter-spacing: 1;
+    text-align: center;
+    color: set-text-color($primary-color);
+}

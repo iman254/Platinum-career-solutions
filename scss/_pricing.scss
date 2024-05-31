@@ -1,0 +1,103 @@
+.pricing{
+    background-image: url(/images/pricing-bg.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 3rem;
+    
+    
+
+    .page-title{
+        @include main-title;
+    }
+
+    .sub-title{
+        text-align: center;
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+    }
+    .p-slogan{
+        text-align: center;
+        font-family: $secondary-font;
+        font-size: 1rem;
+        line-height: 2;
+        color:$secondary-color
+    }
+
+    .locations{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        width: 80%;
+        margin-left: 10%;
+        gap: 20px;
+        z-index: 1;
+        
+        
+        
+
+
+        .countries{
+            flex: 0 0 calc(50% - 20px);
+            height: 19rem;
+            padding: 10px;
+            background-color: rgb(43, 42, 76, 0.3);
+            border: 1px solid #2B2A4C;
+            border-radius: 7px;
+            box-shadow: 0 0 5px rgba(228, 240, 228, 0.5); 
+            @include transition-ease; 
+            
+            
+
+            &:hover{
+                background-color: rgb(12, 45, 87, 0.5);
+                @include transition-ease;
+                box-shadow: 2px 2px 10px rgba(228, 240, 228, 0.5);
+            }
+
+            .country-title{
+                text-align: center;
+                font-weight: 600;
+                font-size: 1.6rem;
+                padding-top: 10px;
+                margin-bottom: 0.5rem;
+                color: $secondary-color;
+                font-family: $secondary-font;
+
+            }
+            .jobs, .contract{
+                font-family: $secondary-font;
+                text-align: center;
+                padding: 8px 0;
+                font-size: 1.2rem;
+            }
+
+            .job-list, .contract-list{
+                width: 80%;
+                margin-left: 40px;
+                list-style: none;
+
+
+                .fa-solid{
+                    padding-right: 5px;
+                }
+                .c-items, .j-items{
+                    
+                    font-size: 18px;
+
+                }
+
+            
+
+            }
+
+            .salary{
+                color: $text-color;
+                font-family: $secondary-font;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+}

@@ -1,20 +1,16 @@
 .about-us{
     background-color: $primary-color;
-    height: 100vh;
+    height: 100%;
+    
 
     .main-title{
         height: 60vh;
         background-image:url(/images/bg-1.png);
         background-size: cover;
         overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        @include flex-center(column);
         font-family: $title-font-family;
-        font-size: 3rem;
-        letter-spacing: 1;
-        color: set-text-color($primary-color);;
+        @include main-title;
 
     }    
     .about-content{
@@ -23,13 +19,9 @@
         flex: 1;
 
         .about-item{
-            display: flex;
-            flex-direction: row;
+            @include flex-center(row);
             height: 40vh;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-
+            
             .abt-title{
                 font-family: $title-font-family;
                 font-size: 1.5rem;
@@ -40,6 +32,7 @@
                 font-family: $sub-secondary-font;
                 line-height: 1.5;
                 letter-spacing: 1;
+                
             }
             
             
@@ -51,8 +44,6 @@
                 justify-content: center;
             }
             
-
-
 
             
         }
