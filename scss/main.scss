@@ -3,6 +3,7 @@
 @import 'menu';
 @import 'about';
 @import 'pricing';
+@import 'contact';
 
 body{
     color: set-text-color($primary-color);
@@ -29,11 +30,25 @@ header{
     width: 100%;
     padding: 1rem;
 
-    .logo-title{
-        font-family: $secondary-font;
-        color: $secondary-color;
+    .logo{
+        width: 300px;
+        height: 90px;
+        display: flex;
         text-align: center;
+    
+    
+        .logo-img{
+            width: 30%;
+            height: 100%;
+        }
+        .logo-title{
+            text-align: center;
+            font-family:"Titillium Web", sans-serif;
+            color:rgb(230, 144, 75);
+            padding: 1rem ;
+            
         
+        }
 
     }
 

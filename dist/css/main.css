@@ -232,7 +232,7 @@ nav .menu-nav-item:nth-child(5) {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding-top: 3rem;
+  padding-top: 100px;
 }
 .pricing .page-title {
   font-family: "Gluten", cursive;
@@ -310,6 +310,162 @@ nav .menu-nav-item:nth-child(5) {
   text-align: center;
 }
 
+.contact-us {
+  background-image: url(/images/c-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 200vh;
+  padding-top: 100px;
+}
+.contact-us .c-title {
+  font-family: "Gluten", cursive;
+  font-size: 3rem;
+  letter-spacing: 1;
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+}
+.contact-us .c-subtitle {
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  color: #EEE2DE;
+  font-family: "inter", sans-serif;
+  padding-bottom: 20px;
+}
+.contact-us .main-container {
+  background-color: #EEE2DE;
+  width: 90%;
+  margin-left: 5%;
+  color: #2B2A4C;
+  border-radius: 14px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-us .main-container .bar {
+  height: 15px;
+}
+.contact-us .main-container .contact-info {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 20px;
+  background-color: #FC6736;
+  height: 60vh;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+.contact-us .main-container .contact-info .contact-title {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.contact-us .main-container .contact-info .contacts, .contact-us .main-container .contact-info .email {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100px;
+  margin-left: 5%;
+  padding-top: 25px;
+  font-size: 20px;
+  gap: 15px;
+}
+.contact-us .main-container .contact-info .contacts .telephone, .contact-us .main-container .contact-info .email .telephone {
+  width: 100%;
+  height: auto;
+}
+.contact-us .main-container .contact-info .contacts .number, .contact-us .main-container .contact-info .email .number {
+  padding: 5px;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+}
+.contact-us .main-container .contact-info .contacts .address, .contact-us .main-container .contact-info .email .address {
+  padding-top: 20px;
+  font-family: "inter", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+.contact-us .main-container .message {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 20px;
+  height: 500px;
+  border-radius: 14px;
+}
+.contact-us .main-container .message .message-title {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "inter", sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.contact-us .main-container .message .names {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-us .main-container .message .names .name {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  padding: 5px;
+}
+.contact-us .main-container .message .names .name .label {
+  padding: 5px;
+}
+.contact-us .main-container .message .names .name input {
+  border: 1px solid #FC6736;
+  height: 30px;
+  width: 200px;
+  border-radius: 7px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.contact-us .main-container .message .message-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-us .main-container .message .message-info .subject, .contact-us .main-container .message .message-info .message-text {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  padding: 5px;
+}
+.contact-us .main-container .message .message-info label {
+  padding: 5px;
+}
+.contact-us .main-container .message .message-info input {
+  border: 1px solid #FC6736;
+  height: 30px;
+  width: 100%;
+  border-radius: 7px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.contact-us .main-container .message .message-info #message {
+  height: 50px;
+  overflow: hidden;
+}
+.contact-us .main-container .message .submit {
+  margin-left: 5px;
+  height: 35px;
+  width: 180px;
+  border: 1px solid #FC6736;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.contact-us .main-container .message .submit:hover {
+  background-color: #FC6736;
+  transition: all 0.5s ease-in-out;
+}
+
 body {
   color: #fff;
   height: 100vh;
@@ -330,10 +486,21 @@ header {
   width: 100%;
   padding: 1rem;
 }
-header .logo-title {
-  font-family: "inter", sans-serif;
-  color: #FC6736;
+header .logo {
+  width: 300px;
+  height: 90px;
+  display: flex;
   text-align: center;
+}
+header .logo .logo-img {
+  width: 30%;
+  height: 100%;
+}
+header .logo .logo-title {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(230, 144, 75);
+  padding: 1rem;
 }
 
 main {

@@ -1,0 +1,180 @@
+.contact-us{
+    background-image:url(/images/c-bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 200vh;
+    padding-top: 100px;
+
+    .c-title{
+        @include main-title;
+        margin-top: 15px;
+
+    }
+    .c-subtitle{
+        padding: 5px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        color: #EEE2DE;
+        font-family: $secondary-font;
+        padding-bottom: 20px;
+
+    }
+   
+    .main-container{
+        background-color: #EEE2DE;
+        width: 90%;
+        margin-left: 5%;
+        color: $primary-color;
+        border-radius: 14px;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        
+        .bar{
+            height: 15px;
+        }
+
+        .contact-info{
+            width: 90%;
+            margin-left: 5%;
+            padding-top: 20px;
+            background-color: $secondary-color;
+            height: 60vh;
+            border-radius: 14px;
+            margin-bottom: 10px;
+
+            .contact-title{ 
+                margin-top: 10px;
+                text-align: center;
+                font-family: $secondary-font;
+                font-size: 30px; 
+                padding-bottom: 20px;   
+                
+            }
+            .contacts, .email{
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+                height: 100px;
+                margin-left: 5%;
+                padding-top: 25px;
+                font-size: 20px;
+                gap:15px;
+                
+
+                .telephone{
+                    width: 100%;
+                    height: auto;
+                }
+
+
+                .number{
+                    padding: 5px;
+                    font-family: $secondary-font;
+                    font-weight: 500;
+                }
+
+                .address{
+                    padding-top: 20px;
+                    font-family: $secondary-font;
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+                
+            }
+            
+        }
+        .message{
+            width: 90%;
+            margin-left: 5%;
+            padding-top: 20px;
+            height: 500px;
+            border-radius: 14px; 
+
+            .message-title{
+                margin-top: 10px;
+                text-align: center;
+                font-family: $secondary-font;
+                font-size: 30px; 
+                padding-bottom: 20px;
+            }
+                .names{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 20px;
+
+                    .name{
+                        font-family: $secondary-font;
+                        font-size: 15px;
+                        padding:5px;
+                        
+                        .label{
+                            padding:5px;
+                        }
+                        input{
+                            border: 1px solid #FC6736;
+                            height: 30px;
+                            width: 200px;
+                            border-radius: 7px;
+                            padding: 12px 20px;
+                            margin-top: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+                .message-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .subject, .message-text{
+                        font-family: $secondary-font;
+                        font-size: 15px;
+                        padding:5px;
+    
+                    }
+                    label{
+                        padding: 5px;
+                    }
+                    input{
+                        border: 1px solid #FC6736;
+                            height: 30px;
+                            width: 100%;
+                            border-radius: 7px;
+                            padding: 12px 20px;
+                            margin-top: 10px;
+                            cursor: pointer;
+
+                    }
+                    #message{
+                        height: 50px;
+                        overflow: hidden;   
+
+                    }
+                    
+
+                }
+                .submit{
+                    margin-left: 5px;
+                    height: 35px;
+                    width: 180px;
+                    border: 1px solid #FC6736;
+                    border-radius: 7px;
+                    cursor: pointer;
+
+
+                    &:hover{
+                        background-color: $secondary-color;
+                        @include transition-ease
+                    }
+                }
+        }
+    }
+    
+}
